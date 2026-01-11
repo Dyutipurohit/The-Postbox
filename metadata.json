@@ -1,0 +1,9 @@
+{
+  "name": "SnailMail: Slow Social",
+  "description": "A mindful social network where letters travel at the speed of distance. Connect deeply, wait patiently.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}

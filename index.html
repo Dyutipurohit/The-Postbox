@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnailMail: The Slow Social Network</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IM+Fell+English:ital@0;1&family=Special+Elite&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "parchment": "#f4ead5",
+                        "sepia-deep": "#4a3728",
+                        "ink-blue": "#2c3e50",
+                        "charcoal": "#333333",
+                        "aged-border": "#c5b358",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "serif-old": ["IM Fell English", "serif"],
+                        "typewriter": ["Special Elite", "cursive"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        :root {
+            --grain-opacity: 0.15;
+        }
+        body {
+            font-family: "Newsreader", serif;
+            background-color: #e5d3b3;
+            min-height: 100dvh;
+        }
+        .paper-grain {
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuANg2Y4o8v9YhiYooS-8gFhgMM1iRDgdCwhLV64UR7OxmsvAsodUmelo88RfVvCdRDSYqID24NmkIIGYFPQwnyjdGhWO-bDM3WFTx46ckKCvt3HeGIDV_-uMpGtZvln8kqfnR7Sy8PjZQrJ2Q0XxMjHVaXaT-FqxsIzWUbmY701pDSULA7UQphS_PAopWGVGJIZUAD5UYLKvsiPpTwJhoJwVaJ3BZkckqUn2231eh2Jtnrr5Qt1_uJunDr9rEZAS264bOOkQJm2PsZ0);
+            opacity: var(--grain-opacity);
+            pointer-events: none;
+        }
+        .deckle-edge {
+            border-radius: 2px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .vintage-map-container {
+            filter: sepia(0.6) contrast(0.9) brightness(1.1);
+            background-color: #dcd0b9;
+        }
+        .ink-stain {
+            filter: blur(0.5px);
+        }
+        .handwritten {
+            font-family: 'Newsreader', serif;
+            font-style: italic;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0"
+  }
+}
+</script>
+</head>
+<body class="bg-[#e5d3b3]">
+    <div id="root"></div>
+</body>
+</html>
